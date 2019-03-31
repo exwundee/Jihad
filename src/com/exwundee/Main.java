@@ -16,6 +16,10 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -93,8 +97,12 @@ public class Main extends JavaPlugin implements Listener {
                         im.addEnchant(Enchantment.VANISHING_CURSE, 1, true);
                         ni.setItemMeta(im);
                     }
-                    Bukkit.getWorld(getConfig().getString("world")).dropItemNaturally(new Location(Bukkit.getWorld(getConfig().getString("world")), 0,
-                            Bukkit.getWorld(getConfig().getString("world")).getHighestBlockYAt(0, 0) + 1, 0), is[e]);
+                    int a = rand.nextInt(200);
+                    if (a > 69) {
+                        a = a - (a*2);
+                    }
+                    Bukkit.getWorld(getConfig().getString("world")).dropItemNaturally(new Location(Bukkit.getWorld(getConfig().getString("world")), a + 722,
+                            Bukkit.getWorld(getConfig().getString("world")).getHighestBlockYAt(a + 722, a +1124) + 1, a + 1124), is[e]);
                 } catch (Exception e) {
 
                 }
@@ -193,26 +201,35 @@ public class Main extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
-        String msg = event.getMessage().replaceAll("fuck", "flubbernugget")
-                .replaceAll("shit", "shart")
-                .replaceAll("nigger", "John200410")
-                .replaceAll("ass", "#*@()!")
-                .replaceAll("hell", "4b4t")
-                .replaceAll("bitch", "lAsAgnA")
-                .replaceAll("cunt", "kitty kat")
-                .replaceAll("damn", "DANIEL")
-                .replaceAll("nigga", "John2OO41O")
-                .replaceAll("prick", "x1D")
-                .replaceAll("twat", "britfag")
-                .replaceAll("hitler", "jew")
-                .replaceAll("hause", "h00semustard")
-                .replaceAll("2b2t", "bad server")
-                .replaceAll("rusherhack", "§c§lrusherhack§r")
-                .replaceAll("minecraft", " ")
-                .replaceAll("no u", "yes me")
-                .replaceAll("6b9t", "ABSOLUTE GARBAGE")
-                .replaceAll("discord", "b&");
-        event.setMessage(msg + " >>> buy rusherhack from John200410#0353 on discord https://discord.gg/RmDrJ4a");
+        String msg = event.getMessage().replaceAll("(?i)fuck", "flubbernugget")
+                .replaceAll("(?i)shit", "shart")
+                .replaceAll("(?i)nigger", "John200410")
+                .replaceAll("(?i)ass", "#*@()!")
+                .replaceAll("(?i)hell", "4b4t")
+                .replaceAll("(?i)bitch", "lAsAgnA")
+                .replaceAll("(?i)cunt", "kitty kat")
+                .replaceAll("(?i)damn", "DANIEL")
+                .replaceAll("(?i)nigga", "John2OO41O")
+                .replaceAll("(?i)prick", "x1D")
+                .replaceAll("(?i)twat", "britfag")
+                .replaceAll("(?i)hitler", "jew")
+                .replaceAll("(?i)hause", "h00semustard")
+                .replaceAll("(?i)2b2t", "bad server")
+                .replaceAll("(?i)rusherhack", "§c§lrusherhack§r")
+                .replaceAll("(?i)minecraft", " ")
+                .replaceAll("(?i)no u", "yes me")
+                .replaceAll("(?i)6b9t", "ABSOLUTE GARBAGE")
+                .replaceAll("(?i)discord", "b&")
+                .replaceAll("(?i)future", "shit")
+                .replaceAll("(?i)x1D", "§6§l§oKING§r")
+                .replaceAll("(?i)tristan", "john's baby")
+                .replaceAll("(?i)popbob", "fat cunt")
+                .replaceFirst("(?i)fit", "fucking pedophile named Peter Larsen who lives at 581 Elk Cir Marco Island, FL 34145. he scams little kids for money");
+
+        event.setMessage(msg + " §2>>> §c§lbuy rusherhack");
+
+
+
     }
 
     @EventHandler
