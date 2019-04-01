@@ -10,6 +10,21 @@ Make sure you are running an [up-to-date version of Paper Spigot 1.13.2](https:/
 2. Place the .jar file into your 'plugins' folder.
 3. Reload or restart the server for changes.
 
+## Commands
+
+- **/jihad** - Gives you 64 TNT and a Flint and Steel
+- **/osama** - Spawns a creeper at your location.
+- **/allah \[int\]** - Spawns an explosion at your location. *FIRST ARGUMENT is the power, default is 3.*
+
+## Features
+
+- Placing TNT on top of `Bedrock` or `Obsidian` will ignite the TNT.
+- Items will randomly be placed in all the online player's inventories.
+- Items will randomly spawn around spawn. (r=200)
+- Chat is modified.
+- Chance of `TNT` turning into `Bedrock`.
+- Hitting a player has a chance of exploding. **UNKNOWN IF THIS WORKS**
+
 ## Terms of Service
 
 You **MAY NOT** distribute, modify, or share this code with anyone under any circumstance.
