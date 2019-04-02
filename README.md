@@ -31,5 +31,5 @@ Make sure you are running an [up-to-date version of Paper Spigot 1.13.2](https:/
 
 ## Terms of Service
 
-You **MAY NOT** modify this code with anyone under any circumstance.  
+You **MAY NOT** modify this code under any circumstance.  
 You **MAY** fork this project, compile accompanying code, and/or download pre-compiled versions of the code.
