@@ -2,6 +2,10 @@
 
 **Jihad** is a private [Minecraft](https://minecraft.net/) Paper Spigot 1.13.2 plugin developed by [x1D](https://github.com/exwundee) for 4b4t.us.
 
+## Discontinued...
+
+This last major update on this project was on the night of March 31, 2019 for the April Fools temporary map. No more major updates, if any minor at all will be pushed to this GitHub as it serves no purpose anymore for anyone. Minor updates can and may occur if requested.
+
 ## Installation
 
 Make sure you are running an [up-to-date version of Paper Spigot 1.13.2](https://getbukkit.org/get/QMerkBxNGNl3EnQl8gACGfWuJnJtJuWB). Errors may occur if you do not use this version.
@@ -27,5 +31,5 @@ Make sure you are running an [up-to-date version of Paper Spigot 1.13.2](https:/
 
 ## Terms of Service
 
-You **MAY NOT** distribute, modify, or share this code with anyone under any circumstance.
-You **MAY** fork this project, compile accompanying code, and/or download pre-compiled versions of the code. 
+You **MAY NOT** modify this code with anyone under any circumstance.  
+You **MAY** fork this project, compile accompanying code, and/or download pre-compiled versions of the code.
